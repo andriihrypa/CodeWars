@@ -2,8 +2,8 @@
 
 
 def gimme(input_array):
-	s = sorted(input_array)
-	return input_array.index(s[1])
+	sorted_list = sorted(input_array)[1]
+	return input_array.index(sorted_list)
 
 
 print(gimme([2, 3, 1]))
