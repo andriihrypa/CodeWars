@@ -1,10 +1,6 @@
-# https://www.codewars.com/kata/alien-accent/train/python
-
-
-def convert(st):
-    st = st.replace("o", "u")
-    st = st.replace("a", "o")
-    return st
+def convert(english):
+	alien_english = english.replace("o", "u").replace("a", "o")
+	return alien_english
 
 
 print(convert("codewars"))

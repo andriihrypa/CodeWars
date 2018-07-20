@@ -1,5 +1,5 @@
 def interpreter(tape, array):
-    
+
     def flip(bit):
         return "0" if bit == "1" else "1"
 
