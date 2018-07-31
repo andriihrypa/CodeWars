@@ -1,9 +1,12 @@
 def sequence(n):
-	a = 0
-	b = 1
-	for i in range(2, n):
-		b, a = (a+b)%3,
+	num1 = 0
+	num2 = 1
+	if n < 3:
+		return n - 1
+	n = (n - 2) % 8
+	for num in range(n):
+		num2, num1 = (num1 + num2) % 3, num2
+	return num2
 
 
-
-print(sequence(1))
+print(sequence(4))
